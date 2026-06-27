@@ -1,0 +1,68 @@
+# PEARL — .gitignore
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# C/C++ build artifacts (rebuild locally with make)
+*.o
+*.d
+*.a
+*.lo
+*.la
+*.dylib
+*.so.*
+.libs/
+.deps/
+*.bak
+booksim_build/booksim
+booksim_build/lex.yy.c
+booksim_build/y.tab.c
+booksim_build/y.tab.h
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*~
+
+# Local logs / temp
+*.log
+*.log.tmp
+*.cfg.tmp
+/tmp_local/
+tmp/
+.tmp/
+
+# Large model artifacts (regenerate via training script)
+*.pt
+*.ckpt
+*.pth
+
+# Heavy intermediate logs (already aggregated)
+booksim_build/exports/training_history_*.csv.bak
+
+# Legacy / non-PEARL data
+results/mnist_*.csv
+results/california_housing_*.csv
+
+# Secrets — NEVER commit
+.env
+*.token
+*.pem
+*token*
+credentials.json
+github_token.txt

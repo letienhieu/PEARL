@@ -1,0 +1,12 @@
+DDDQN Statistical Analysis Summary (5-seed paired t-test)
+========================================================================
+
+Total cells: 45 (mesh × traffic × IR)
+
+vs MinAdapt:
+  Significant wins  (p<0.05): 20/45
+  Significant losses(p<0.05): 13/45
+
+vs Best Classical (per-seed):
+  Significant wins  (p<0.05): 2/45
+  Significant losses(p<0.05): 26/45
